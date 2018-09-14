@@ -1,0 +1,114 @@
+:root {
+  --color-primary: #2c8Bd9;
+  --color-secondary: #333;
+  --font-primary: "Montserrat", sans-serif;
+  --font-secondary: "Montserrat Alternates", "Montserrat", sans-serif;
+  --shadow-primary: 0 3px 6px rgba(0, 0, 0, .15);
+  --radial-primary: radial-gradient(var(--color-primary), #216ead);
+  --radial-secondary: radial-gradient(#f2f2f2, #d2d2d2);
+}
+
+html {
+  font-family: var(--font-primary);
+}
+
+h1, h2, h3, h4, .font-secondary {
+  font-family: var(--font-secondary);
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, div, span, img, .transition {
+  transition: all .25s ease-in-out;
+}
+
+.scale:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.scale-small:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.scale-slow {
+  transition: all .5s ease-in-out;
+}
+
+.origin-bl {
+  transform-origin: bottom left;
+}
+
+.intro {
+  width: 100vw;
+  height: 100vh;
+  background-image: var(--radial-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-shadow: var(--shadow-primary);
+}
+
+.intro h1 {
+  line-height: 1;
+}
+
+.intro h1 span:first-child {
+  font-weight: 300;
+}
+
+.title-width {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 15em;
+}
+
+.icon-list a {
+  text-shadow: var(--shadow-primary);
+}
+
+@media only screen and (min-width: 25em) {
+
+  .intro h1 {
+    line-height: 1;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  .intro h1 {
+    line-height: 1;
+  }
+
+  .title-width {
+    max-width: 18em;
+  }
+
+  .subtitle {
+    text-align: right;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .intro h1 {
+    line-height: 1;
+  }
+
+
+  .title-width {
+    max-width: 23em;
+  }
+
+}
